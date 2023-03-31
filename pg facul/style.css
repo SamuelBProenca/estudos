@@ -1,0 +1,97 @@
+body
+{
+    margin: 0 auto;
+    
+}
+
+h1
+{
+    text-align: center;
+
+
+    color: green;
+    display: block;
+    padding: 50px;
+    background-color: antiquewhite;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+form
+{
+    display: block;
+    background-color: antiquewhite;
+    position: absolute;
+    margin-top: 150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    border-radius: 15px;
+    color:green;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    
+    
+}
+
+input.palavra
+{
+    border-radius: 8px;
+    border: 1px;
+    height: 25px;
+    width: 50%;
+    text-align: center;
+
+}
+
+
+select
+{
+    border-radius: 8px;
+    border: 1px;
+    margin-left: 40%;
+    height: 25px;
+    width: 50%;
+    border-style: solid
+}
+
+input#botao
+{
+    /*é uma melhor opção definir o tamanho com unidades relativas como EM ou REM ao invez de px*/
+    background-color: green;
+    border: none;
+    margin-left: 35%;
+    padding: 15px;
+    width: 30%;
+    height: 10%;
+    border-radius: 8px;
+}
+
+
+div#palavras{
+    padding: 15%;
+    width: 30%;
+    margin-left: 20%;
+    
+
+}
+p.item{
+    padding: 1em;
+    font-weight: bold;
+    font-size: 3vh;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+
+
+
