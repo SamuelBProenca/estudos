@@ -30,7 +30,7 @@ def main():
         # Wait for user to say "genius"
         print("Say 'Genius' to start recording your question...")
         try:
-            with sr.Microphone(device_index=7) as source:  # Substitua 7 pelo índice do microfone desejado
+            with sr.Microphone() as source:  # Substitua 7 pelo índice do microfone desejado
                 recognizer = sr.Recognizer()
                 recognizer.energy_threshold = 3000
                 recognizer.pause_threshold = 1
