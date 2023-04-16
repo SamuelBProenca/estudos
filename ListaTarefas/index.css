@@ -1,0 +1,99 @@
+
+* {
+    margin: 0.5%;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #e9e8e8;
+    border-radius: 15px;
+}
+
+.container {
+    text-align: center;
+    width: 50vw;
+    background: #866969;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 1%;
+}
+
+.titulo input {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin: 5px  auto;
+}
+
+.titulo p {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    margin: 5px auto;
+}
+
+li {
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+button {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 8px 16px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4e4e;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 2%;
+}
+
+.btnAdd {
+    background-color: rgb(0, 155, 21);
+}
+
+.btnRemoveAll {
+    background-color: rgb(170, 0, 0);
+}
