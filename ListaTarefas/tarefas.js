@@ -3,24 +3,26 @@ const btnAdd = document.getElementById('adicionar');
 const btnExcluirTodos = document.getElementById('removeAll');
 const lista = document.getElementById('lista');
 
-// Adicionar o evento de click no bnt
+// Adiciona evento de clique no botão
 btnAdd.addEventListener("click", function() {
     
     const tarefaInput = document.getElementById('tarefa').value;
 
-    // Verificando se o input está vazio
+    // Verifica se o input está vazio
     if (tarefaInput.trim() === "") {
         alert("Por favor, preencha o campo da tarefa.");
         return;
     }    
 
-    // Adiciona item a lista criada
+    // Adiciona item à lista criada
     const novaTarefa = document.createElement('li');
-    novaTarefa.innerText = tarefaInput;
     
+    const tarefaTexto = document.createElement('span');
+    tarefaTexto.innerText = tarefaInput;
+    novaTarefa.appendChild(tarefaTexto);
     
     novaTarefa.addEventListener('click', function() {
-        novaTarefa.classList.toggle('contluida');
+        novaTarefa.classList.toggle('concluida');
     });
 
     const btnExcluir = document.createElement('button');
@@ -31,8 +33,26 @@ btnAdd.addEventListener("click", function() {
     });
 
     btnExcluir.style.marginLeft = "50px";
+    
+    const btnEdit = document.createElement('button');
+    btnEdit.innerText = 'Editar';
+
+    btnEdit.addEventListener('click', function() {
+        // Solicita ao usuário a nova descrição da tarefa
+        const novaDescricao = prompt('Digite a nova descrição da tarefa:', tarefaTexto.innerText);
+
+        // Atualiza a descrição da tarefa somente se o usuário inserir algum valor
+        if (novaDescricao !== null && novaDescricao.trim() !== "") {
+            tarefaTexto.innerText = novaDescricao;
+        } else if (novaDescricao !== null) {
+            alert("Por favor, insira uma descrição válida para a tarefa.");
+        }
+    });
+    
+    btnEdit.style.marginLeft = "50px";
 
     novaTarefa.appendChild(btnExcluir);
+    novaTarefa.appendChild(btnEdit);
 
     lista.appendChild(novaTarefa);
 
@@ -40,10 +60,9 @@ btnAdd.addEventListener("click", function() {
 
 });
 
-// Btn que exclui todos os itens da lista
+// Botão que exclui todos os itens da lista
 btnExcluirTodos.addEventListener("click", function() {
     while (lista.firstChild) {
         lista.removeChild(lista.firstChild);
     }
 });
-
