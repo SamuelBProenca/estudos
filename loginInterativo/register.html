@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Registre-se</h1>
+        <form id="registro">
+            <label for="nome"></label>
+            <input type="text" id="nome" placeholder="Name">
+
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="E-mail">
+
+            <label for="number"></label>
+            <input type="tel" id="number" placeholder="Phone"   inputmode="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <label for="usuario"></label>
+            <input type="text" id="usuario" placeholder="User name">
+
+            <label for="senha"></label>
+            <input type="password" id="senha" placeholder="Password">
+            
+            <label for="confSenha"></label>
+            <input type="password" id="confSenha" placeholder="Confirme your Password">
+            
+            <button id="btnLog">Login</button>
+            <button id="btnReg" onclick="send();">Registre-se</button>
+        </form>
+    </div>
+
+    <script src=""></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+    display: block;
+    padding: 25px;
+    width: 25rem;
+    border-radius: 8px;
+    background-color: #181717;
+    height: 20rem;
+    box-shadow: 0.4rem 0.2rem 1rem 0.1rem   #6d6c6c ;
+}
+
+#login{
+    display: block;
+    padding: 15px;
+    background-color: #f1f1f1;
+    width: 20rem;
+    border-radius: 10px;
+    border-style: none;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+label{
+    width: 50rem;
+    height: auto;
+    justify-content: center;
+    padding: 5px;
+}
+
+input{
+    padding: 8px 25px;
+    margin: 3px;
+    background-color: #f1f1f11e;
+    border-radius: 8px;
+    margin-top: 5px;
+    border-color: #0001;
+    color: #000000;
+    
+}
+
+input:focus{
+    background-color: rgb(214, 213, 212);
+}
+
+input:hover{
+    background-color: rgb(214, 213, 212);
+}
+
+
+#btnLog{
+    margin-top: 15px;
+    display: block;
+    padding: 10px;
+    background-color: rgb(54, 54, 54);
+    width: 13.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f1f1f1;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+#btnLog:hover{
+    background-color: rgb(88, 86, 86);
+    height: 40px;
+    width: 230px;
+}
+
+#btnReg{
+    margin-top: 3px;
+    display: block;
+    padding: 10px;
+    background-color: #363636;
+    width: 13.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f1f1f1;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+#btnReg:hover{
+    background-color: rgb(88, 86, 86);
+    height: 40px;
+    width: 230px;
+}
